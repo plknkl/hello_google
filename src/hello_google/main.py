@@ -1,9 +1,10 @@
-from hello_google.functions.google import query_google
+from hello_google.adapters.usecases import query_web
+from hello_google.models import QueryResult
 
 def main():
-    response = query_google()
-    print(f"Status code: {response.status_code}")
-    print(f"First 100 chars of content: {response.text[:100]}")
+    response: QueryResult = query_web("https://www.google.com")
+    print(f"Status code: {response.code}")
+    print(f"First 100 chars of content: {response.message[:100]}")
 
 if __name__ == "__main__":
     main()

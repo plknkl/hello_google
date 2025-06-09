@@ -1,5 +1,5 @@
-from hello_google.main import query_google
+from hello_google.adapters.usecases import query_web
 
 def test_google():
-    response = query_google()
-    assert response.status_code == 200
+    response = query_web("https://www.google.com")
+    assert response.code == "200"

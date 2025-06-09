@@ -15,24 +15,6 @@ Questa repository è pensata come base per chi vuole imparare le best practice d
 
 ---
 
-## Struttura del progetto
-```raw
-    hello_google/
-    ├── src/
-    │ └── hello_google/
-    │ ├── __init__.py
-    │ ├── main.py
-    │ └── functions/
-    │ ├── __init__.py
-    │ └── google.py
-    ├── tests/
-    │ └── test_basic.py
-    ├── pyproject.toml
-    ├── requirements.txt
-    ├── README.md
-    ├── LICENSE
-```
-
 ## Installazione
 clona questo repository
 ```shell
