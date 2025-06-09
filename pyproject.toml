@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello_google"
+version = "0.1.0"
+description = "Un esempio di progetto Python strutturato"
+authors = [
+  {name = "Nikolai Polikurov", email = "nikolai@polikurov.com"}
+]
+dependencies = [
+  "requests"
+]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
