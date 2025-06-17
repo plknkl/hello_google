@@ -1,5 +1,6 @@
-from hello_google.adapters.usecases import query_web
+from hello_google.adapters.usecases import WebQuery
 
 def test_google():
-    response = query_web("https://www.google.com")
+    client = WebQuery()
+    response = client.query("https://www.google.com")
     assert response.code == "200"
