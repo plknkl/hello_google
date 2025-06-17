@@ -18,7 +18,7 @@ Questa repository è pensata come base per chi vuole imparare le best practice d
 ## Installazione
 clona questo repository
 ```shell
-git clone https://github.com/username/hello_google.git
+git clone https://github.com/plknkl/hello_google.git
 cd hello_google
 ```
 
